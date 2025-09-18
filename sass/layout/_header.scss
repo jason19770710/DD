@@ -1,0 +1,60 @@
+$headerBG: #dc0001;
+
+.look {
+  @include absolute(0, auto, auto, 50%, 1);
+  transform: translate(-50%);
+  max-width: none;
+  width: 2560px;
+  opacity: 0.8;
+}
+header {
+  background-color: $headerBG;
+  position: relative;
+  padding: 10px 0;
+  overflow: hidden;
+  > .container {
+    max-width: 1140px;
+    padding: 0;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    @include media($wide) {
+      max-width: 960px;
+    }
+    @include media($padLg) {
+      justify-content: center;
+    }
+  }
+  .header__logo {
+    display: block;
+    max-width: 168px;
+    margin-right: 12px;
+  }
+  .header__shoplist,
+  .header__memberlist {
+    line-height: 12px;
+    @include media($padLg) {
+      display: none;
+    }
+    li {
+      display: inline-block;
+      line-height: 1.1;
+    }
+    a {
+      color: #fff;
+      font-size: 12px;
+      font-weight: 300;
+    }
+  }
+  .header__shoplist li {
+    padding: 0 10px;
+    border-left: 1px solid #fff;
+    &:last-child {
+      border-right: 1px solid #fff;
+    }
+  }
+  .header__memberlist li {
+    padding: 0 3px;
+  }
+}
