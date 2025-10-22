@@ -1,0 +1,16 @@
+.right__box {
+  @include fixed(auto, 5px, 20px, auto, 30);
+  display: none;
+}
+.gotop {
+  @include size(42px, 42px);
+  padding: 7px 6px 3px;
+  overflow: hidden;
+  background-color: $grayLight1;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+  img {
+    width: 100%;
+  }
+}
