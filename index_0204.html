@@ -166,7 +166,10 @@
               <img class="pc" src="" />
               <img class="mb" src="" />
             </a>
-
+            <a target="_blank" href="" target="_blank" class="swiper-slide ga-bn">
+              <img class="pc" src="" />
+              <img class="mb" src="" />
+            </a>
           </div>
           <!-- Add Arrows -->
           <div class="swiper-button-next"></div>
@@ -343,6 +346,32 @@
     var bannerSliderData = {
       //01
       section1: [
+
+
+        {
+          //預設項目（當前面時間範圍都不符合時顯示）
+          //AirTag 2 歷來最好找的 AirTag
+          isDefault: true,
+          link: "https://24h.pchome.com.tw/store/DYAJFM?sitesBanner=apple_b09",
+          imgPc: "img/new/slide_d_AirTag2_0204.jpg",
+          imgMb: "img/new/slide_m_AirTag2_0204.jpg",
+          alt: "AirTag 2 歷來最好找的 AirTag",
+        },
+        {
+          //Apple 全系列商品享優惠
+          startTime: "2026-02-01 00:00",
+          endTime: "2026-02-04 20:00",
+          link: "https://24h.pchome.com.tw/store/DYAJ8N?sitesBanner=apple_b09",
+          imgPc: "img/CNY/slide_d_all_0204.jpg",
+          imgMb: "img/CNY/slide_m_all_0204.jpg",
+          alt: "Apple 全系列商品享優惠",
+        },
+
+
+
+      ],
+      //02
+      section2: [
         {
           startTime: "2026-01-29 00:00",
           endTime: "2026-01-31 24:00",
@@ -375,8 +404,8 @@
 
       ],
 
-      // 02
-      section2: [
+      // 03
+      section3: [
 
         {
           startTime: "2026-01-29 00:00",
@@ -409,8 +438,8 @@
 
       ],
 
-      // 03
-      section3: [
+      // 04
+      section4: [
         {
           startTime: "2026-01-29 00:00",
           endTime: "2026-01-31 24:00",
@@ -433,7 +462,7 @@
           //第11代 iPad 指定品限量送3%P幣(上限500)
           startTime: "2026-02-01 00:00",
           endTime: "2026-02-01 24:00",
-          link: "https://24h.pchome.com.tw/store/DYAJN4?sitesBanner=apple_b03",
+          link: "https://24h.pchome.com.tw/store/DYAJN3?sitesBanner=apple_b03",
           imgPc: "img/CNY/slide_d_ipadA16_0201_p.jpg",
           imgMb: "img/CNY/slide_m_ipadA16_0201_p.jpg",
           alt: "第11代 iPad  指定品限量送3%P幣(上限500)",
@@ -441,8 +470,8 @@
 
       ],
 
-      // 04
-      section4: [
+      // 05
+      section5: [
 
         {
           startTime: "2026-01-29 00:00",
@@ -475,8 +504,8 @@
 
 
 
-      // 05
-      section5: [
+      // 06
+      section6: [
 
         {
           startTime: "2026-01-29 00:00",
@@ -507,8 +536,8 @@
 
       ],
 
-      // 06
-      section6: [
+      // 07
+      section7: [
         {
           startTime: "2026-01-29 00:00",
           endTime: "2026-01-31 24:00",
@@ -540,8 +569,8 @@
       ],
 
 
-      // 07
-      section7: [
+      // 08
+      section8: [
 
         {
           startTime: "2026-01-29 00:00",
@@ -574,8 +603,8 @@
       ],
 
 
-      // 08
-      section8: [
+      // 09
+      section9: [
 
         {
           startTime: "2026-01-29 00:00",
@@ -732,22 +761,14 @@
 
       // 04八格活動第四格 start
       section4: [
-        {
-          startTime: "2026-01-29 00:00",
-          endTime: "2026-01-31 24:00",
-          linkPC: "https://24h.pchome.com.tw/store/DYAJEP?sitesBanner=apple_c04",
-          linkMB: "https://24h.pchome.com.tw/store/DYAJEP?sitesBanner=apple_c04",
-          img: "img/2026/event_MacBookPro_0123.jpg",
-          alt: "MacBook Pro 搭載M5晶片 全新上市"
-        },
 
         {
           // 預設項目，當沒有符合的時間範圍時顯示
           isDefault: true,
-          linkPC: "https://24h.pchome.com.tw/store/DYAJEP?sitesBanner=apple_c04",
-          linkMB: "https://24h.pchome.com.tw/store/DYAJEP?sitesBanner=apple_c04",
-          img: "img/CNY/event_MacBookPro_0201.jpg",
-          alt: "MacBook Pro 搭載M5晶片 全新上市"
+          linkPC: "https://24h.pchome.com.tw/store/DYAJFM?sitesBanner=apple_c04",
+          linkMB: "https://24h.pchome.com.tw/store/DYAJFM?sitesBanner=apple_c04",
+          img: "img/CNY/event_AirTag2_0204.jpg",
+          alt: "AirTag 2 全新上市"
         },
         {
           startTime: "2026-02-01 00:00",
@@ -756,6 +777,14 @@
           linkMB: "https://24h.pchome.com.tw/store/DYAJEP?sitesBanner=apple_c04",
           img: "img/CNY/event_MacBookPro_500p.jpg",
           alt: "MacBook Pro 搭載M5晶片 指定品限量送500P幣",
+        },
+        {
+          startTime: "2026-02-04 00:00",
+          endTime: "2026-02-04 20:00",
+          linkPC: "https://24h.pchome.com.tw/store/DYAJEP?sitesBanner=apple_c04",
+          linkMB: "https://24h.pchome.com.tw/store/DYAJEP?sitesBanner=apple_c04",
+          img: "img/CNY/event_MacBookPro_0201.jpg",
+          alt: "MacBook Pro 搭載M5晶片 全新上市"
         },
 
       ],
